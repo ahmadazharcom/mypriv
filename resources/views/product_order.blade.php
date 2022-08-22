@@ -1,0 +1,126 @@
+@extends('layouts/whatsapp')
+
+@section('title', 'WhatsApp')
+
+@section('content')
+
+  <div class="content">
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- <div class="col-md-6 order-md-2">
+          <img src="images/undraw_file_sync_ot38.svg" alt="Image" class="img-fluid">
+        </div> -->
+        <div class="col-md-6 contents">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <div class="form-block">
+                  <div class="mb-4">
+                  <center><img src="../form09/images/whatsapp50.png" class="mb-2"></center>
+                  <center><h3>Hantar Pesanan ke <strong>WhatsApp</strong></h3><p class="mb-4">Sila isikan maklumat yang tepat untuk mengelakkan kegagalan pihak kami memberikan maklum balas kepada anda!.</p></center>
+                  
+                  
+                </div>
+                <form action="/sendwa" method="post">
+                    @csrf                    
+                  <input type="hidden" name="product_id" value="{{ $id }}">
+                  <input type="hidden" name="product_name" value="{{ $name }}">
+                  <input type="hidden" name="price" value="{{ $price }}">
+                  <input type="hidden" name="quantity" value="{{ $quantity }}">
+                  <input type="hidden" name="total" value="{{ $total }}">
+                  <div class="form-group first mb-4">
+                    <label for="password">Nama Produk</label>                                    
+                  </div>
+                  <div class="pt-2">
+                  <label for="password">{{ $name }}</label>  
+                  </div>
+
+                  <div class="form-group first mb-4 mt-3">
+                    <label for="password">Penerangan</label>                                    
+                  </div>
+                  <label for="password">{{ $description }}</label>                     
+
+                  <div class="form-group first mb-4 mt-3">
+                    <label for="password">Imej Produk</label>                                    
+                  </div>
+                  <img src="{{ asset($img1) }}" width="50%"> 
+
+                  <div class="form-group first mb-4 mt-3">
+                    <label for="password">Harga Per 1</label>                                    
+                  </div>
+                  <label for="password">{{ $price }}</label> 
+
+                  <div class="form-group first mb-4 mt-3">
+                    <label for="password">Kuantiti</label>                                    
+                  </div>
+                  <label for="password">{{ $quantity }}</label>
+
+                  <div class="form-group first mb-4 mt-3">
+                    <label for="password">Jumlah</label>                                    
+                  </div>
+                  <label for="password">{{ $total }}</label>
+
+                  <div class="form-group first">
+                    <label for="username">Nama</label>
+                    <input type="text" class="form-control @error('name') is-invalid @enderror" value="{{ old('name') }}" name="name" id="name" required>
+                                        @error('name')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror  
+                  </div>
+                  
+                  <div class="form-group first">
+                    <label for="username">Email</label>
+                    <input type="text" class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" name="email" id="email" required>
+                                    @error('email')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                  </div>    
+
+                  <div class="form-group first">
+                    <label for="username">No Telefon Bimbit</label>
+                    <input type="text" class="form-control @error('contact') is-invalid @enderror" value="{{ old('contact') }}" name="contact" id="contact" required>
+                                        @error('contact')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                  </div>                      
+                  <div class="form-group first mb-4">
+                    <label for="password">Nota Tambahan</label>
+                    <textarea name="notes" id="notes" class="form-control" rows="3">{{ old('notes') }}</textarea>
+                    @error('message')
+                      <p class="text-danger">{{ $message }}</p>
+                    @enderror                  
+                  </div>
+                  
+
+                  <input type="submit" value="Hantar Pesanan" class="btn btn-pill text-white btn-block btn-success">
+
+                  <span class="d-block text-center my-4 text-muted"><a href="/" class="text-decoration-none">Kembali ke Halaman Utama</a></span>
+                  
+                  <!--<div class="social-login text-center">
+                    <a href="#" class="facebook">
+                      <span class="icon-facebook mr-3"></span> 
+                    </a>
+                    <a href="#" class="twitter">
+                      <span class="icon-twitter mr-3"></span> 
+                    </a>
+                    <a href="#" class="google">
+                      <span class="icon-google mr-3"></span> 
+                    </a>
+                  </div>-->
+                </form>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+@endsection

@@ -1,0 +1,512 @@
+2022-01-14 21:55:43.103074 [NOTICE] [3606058] [T0] [54.154.227.123:54930:HTTP2-1#APVH_mypriv.online:443] [STDERR] PHP Warning:  require(/var/www/vhosts/mypriv.online/httpdocs/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/vhosts/mypriv.online/httpdocs/index.php on line 24
+2022-01-14 21:55:43.103143 [NOTICE] [3606058] [T0] [54.154.227.123:54930:HTTP2-1#APVH_mypriv.online:443] [STDERR] PHP Warning:  require(/var/www/vhosts/mypriv.online/httpdocs/../vendor/autoload.php): failed to open stream: No such file or directory in /var/www/vhosts/mypriv.online/httpdocs/index.php on line 24
+2022-01-14 21:55:43.103216 [NOTICE] [3606058] [T0] [54.154.227.123:54930:HTTP2-1#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  require(): Failed opening required '/var/www/vhosts/mypriv.online/httpdocs/../vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /var/www/vhosts/mypriv.online/httpdocs/index.php on line 24
+2022-01-14 22:06:36.267736 [NOTICE] [3613074] [T5] [14.192.212.162:10391-H3:30E4885F492A5A4B-8#APVH_mypriv.online:443:MODSEC] mod_security rule [id "77316757"] at [/etc/httpd/conf/modsecurity.d/rules/custom/007_i360_4_custom.conf:416] triggered! 
+2022-01-19 21:24:33.161270 [NOTICE] [2714012] [T0] [14.192.213.118:37399:HTTP2-1#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php:853
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(853): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(816): Illuminate\Container\Container->resolveDependencies()
+#2 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build()
+#3 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve()
+#4 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(785): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build()
+#6 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve()
+#7 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make()
+#8 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(170): Illuminate\Foundation\Application->make()
+#9 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(123): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(100): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#11 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->h
+2022-01-19 21:24:33.161319 [NOTICE] [2714012] [T0] [14.192.213.118:37399:HTTP2-1#APVH_mypriv.online:443] [STDERR] andleException()
+#12 {main}
+  thrown in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+2022-01-19 21:24:33.162029 [NOTICE] [2714012] [T0] [14.192.213.118:37399:HTTP2-1#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php:853
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(853): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(816): Illuminate\Container\Container->resolveDependencies()
+#2 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build()
+#3 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve()
+#4 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(785): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build()
+#6 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve()
+#7 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make()
+#8 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(170): Illuminate\Foundation\Application->make()
+#9 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(123): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(100): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#11 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Fo
+2022-01-19 21:24:33.162059 [NOTICE] [2714012] [T0] [14.192.213.118:37399:HTTP2-1#APVH_mypriv.online:443] [STDERR] undation/Bootstrap/HandleExceptions.php(134): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#13 {main}
+  thrown in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+2022-01-19 21:24:40.698477 [NOTICE] [2714010] [T0] [14.192.213.118:37402-H3:D19C84D1859D2814-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php:853
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(853): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(816): Illuminate\Container\Container->resolveDependencies()
+#2 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build()
+#3 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve()
+#4 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(785): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build()
+#6 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve()
+#7 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make()
+#8 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(170): Illuminate\Foundation\Application->make()
+#9 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(123): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(100): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#11 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->h
+2022-01-19 21:24:40.698522 [NOTICE] [2714010] [T0] [14.192.213.118:37402-H3:D19C84D1859D2814-0#APVH_mypriv.online:443] [STDERR] andleException()
+#12 {main}
+  thrown in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+2022-01-19 21:24:40.698682 [NOTICE] [2714010] [T0] [14.192.213.118:37402-H3:D19C84D1859D2814-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php:853
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(853): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(816): Illuminate\Container\Container->resolveDependencies()
+#2 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build()
+#3 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve()
+#4 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(785): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build()
+#6 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve()
+#7 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make()
+#8 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(170): Illuminate\Foundation\Application->make()
+#9 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(123): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(100): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#11 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Fo
+2022-01-19 21:24:40.698715 [NOTICE] [2714010] [T0] [14.192.213.118:37402-H3:D19C84D1859D2814-0#APVH_mypriv.online:443] [STDERR] undation/Bootstrap/HandleExceptions.php(134): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#13 {main}
+  thrown in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+2022-01-19 21:25:26.149750 [NOTICE] [2714011] [T0] [14.192.213.118:37436-H3:04F4432102E5D611-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php:853
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(853): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Method Reflecti...', '/var/www/vhosts...', 853)
+#1 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(816): Illuminate\Container\Container->resolveDependencies(Array)
+#2 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#3 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#4 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(785): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build(Object(Closure))
+#6 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#7 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(170): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(123): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /var/www/
+2022-01-19 21:25:26.149827 [NOTICE] [2714011] [T0] [14.192.213.118:37436-H3:04F4432102E5D611-0#APVH_mypriv.online:443] [STDERR] vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(100): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(ErrorException))
+#11 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#12 {main}
+  thrown in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+2022-01-19 21:25:26.150103 [NOTICE] [2714011] [T0] [14.192.213.118:37436-H3:04F4432102E5D611-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php:853
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(853): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Method Reflecti...', '/var/www/vhosts...', 853)
+#1 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(816): Illuminate\Container\Container->resolveDependencies(Array)
+#2 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#3 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#4 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(785): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build(Object(Closure))
+#6 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#7 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(170): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(123): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /var/www/
+2022-01-19 21:25:26.150128 [NOTICE] [2714011] [T0] [14.192.213.118:37436-H3:04F4432102E5D611-0#APVH_mypriv.online:443] [STDERR] vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(100): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(ErrorException))
+#11 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(134): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#13 {main}
+  thrown in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+2022-01-19 21:25:28.255288 [NOTICE] [2714011] [T0] [14.192.213.118:37436-H3:04F4432102E5D611-4#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php:853
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(853): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Method Reflecti...', '/var/www/vhosts...', 853)
+#1 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(816): Illuminate\Container\Container->resolveDependencies(Array)
+#2 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#3 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#4 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(785): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build(Object(Closure))
+#6 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#7 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(170): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(123): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /var/www/
+2022-01-19 21:25:28.255372 [NOTICE] [2714011] [T0] [14.192.213.118:37436-H3:04F4432102E5D611-4#APVH_mypriv.online:443] [STDERR] vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(100): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(ErrorException))
+#11 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#12 {main}
+  thrown in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+2022-01-19 21:25:28.255715 [NOTICE] [2714011] [T0] [14.192.213.118:37436-H3:04F4432102E5D611-4#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php:853
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(853): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Method Reflecti...', '/var/www/vhosts...', 853)
+#1 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(816): Illuminate\Container\Container->resolveDependencies(Array)
+#2 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#3 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#4 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(785): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build(Object(Closure))
+#6 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#7 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(170): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(123): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /var/www/
+2022-01-19 21:25:28.255741 [NOTICE] [2714011] [T0] [14.192.213.118:37436-H3:04F4432102E5D611-4#APVH_mypriv.online:443] [STDERR] vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(100): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(ErrorException))
+#11 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(134): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#13 {main}
+  thrown in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+2022-01-19 21:25:29.316575 [NOTICE] [2714011] [T0] [14.192.213.118:37436-H3:04F4432102E5D611-8#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php:853
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(853): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Method Reflecti...', '/var/www/vhosts...', 853)
+#1 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(816): Illuminate\Container\Container->resolveDependencies(Array)
+#2 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#3 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#4 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(785): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build(Object(Closure))
+#6 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#7 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(170): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(123): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /var/www/
+2022-01-19 21:25:29.316640 [NOTICE] [2714011] [T0] [14.192.213.118:37436-H3:04F4432102E5D611-8#APVH_mypriv.online:443] [STDERR] vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(100): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(ErrorException))
+#11 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#12 {main}
+  thrown in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+2022-01-19 21:25:29.316971 [NOTICE] [2714011] [T0] [14.192.213.118:37436-H3:04F4432102E5D611-8#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php:853
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(853): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Method Reflecti...', '/var/www/vhosts...', 853)
+#1 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(816): Illuminate\Container\Container->resolveDependencies(Array)
+#2 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#3 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#4 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(785): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build(Object(Closure))
+#6 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#7 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(170): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(123): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /var/www/
+2022-01-19 21:25:29.316982 [NOTICE] [2714011] [T0] [14.192.213.118:37436-H3:04F4432102E5D611-8#APVH_mypriv.online:443] [STDERR] vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(100): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(ErrorException))
+#11 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(134): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#13 {main}
+  thrown in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+2022-01-19 21:25:32.047457 [NOTICE] [2714011] [T0] [14.192.213.118:37436-H3:04F4432102E5D611-12#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php:853
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(853): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Method Reflecti...', '/var/www/vhosts...', 853)
+#1 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(816): Illuminate\Container\Container->resolveDependencies(Array)
+#2 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#3 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#4 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(785): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build(Object(Closure))
+#6 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#7 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(170): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(123): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /var/www/
+2022-01-19 21:25:32.047490 [NOTICE] [2714011] [T0] [14.192.213.118:37436-H3:04F4432102E5D611-12#APVH_mypriv.online:443] [STDERR] vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(100): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(ErrorException))
+#11 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#12 {main}
+  thrown in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+2022-01-19 21:25:32.047854 [NOTICE] [2714011] [T0] [14.192.213.118:37436-H3:04F4432102E5D611-12#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php:853
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(853): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8192, 'Method Reflecti...', '/var/www/vhosts...', 853)
+#1 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(816): Illuminate\Container\Container->resolveDependencies(Array)
+#2 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#3 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#4 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(785): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(667): Illuminate\Container\Container->build(Object(Closure))
+#6 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php(615): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array)
+#7 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(767): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(170): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(123): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /var/www/
+2022-01-19 21:25:32.047864 [NOTICE] [2714011] [T0] [14.192.213.118:37436-H3:04F4432102E5D611-12#APVH_mypriv.online:443] [STDERR] vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(100): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(ErrorException))
+#11 /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(134): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#13 {main}
+  thrown in /var/www/vhosts/mypriv.online/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 853
+2022-01-24 21:22:41.059590 [NOTICE] [3844849] [T0] [14.192.209.96:20223:HTTP2-1#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:22:49.155207 [NOTICE] [3844849] [T0] [14.192.209.96:20160-H3:1E1847CC4F142DA7-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:23:18.141674 [NOTICE] [3844849] [T0] [14.192.209.96:20160-H3:1E1847CC4F142DA7-4#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:23:21.603616 [NOTICE] [3844849] [T0] [14.192.209.96:20160-H3:1E1847CC4F142DA7-8#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:23:22.582631 [NOTICE] [3844849] [T0] [14.192.209.96:20160-H3:1E1847CC4F142DA7-12#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:23:25.211097 [NOTICE] [3844849] [T0] [14.192.209.96:20160-H3:1E1847CC4F142DA7-16#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:23:26.899283 [NOTICE] [3844849] [T0] [14.192.209.96:20160-H3:1E1847CC4F142DA7-20#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:23:27.551057 [NOTICE] [3844849] [T0] [14.192.209.96:20160-H3:1E1847CC4F142DA7-24#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:23:28.658111 [NOTICE] [3844849] [T0] [14.192.209.96:20160-H3:1E1847CC4F142DA7-28#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:23:31.523295 [NOTICE] [3844849] [T0] [14.192.209.96:20160-H3:1E1847CC4F142DA7-32#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:23:32.322002 [NOTICE] [3844849] [T0] [14.192.209.96:20160-H3:1E1847CC4F142DA7-36#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:23:32.961029 [NOTICE] [3844849] [T0] [14.192.209.96:20160-H3:1E1847CC4F142DA7-40#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:25:31.118120 [ERROR] [3899965] [T0] [14.192.209.96:20188-H3:B73F1A8117DEDB8C-20#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:25:31.118150 [NOTICE] [3899965] [T0] [14.192.209.96:20188-H3:B73F1A8117DEDB8C-20#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:25:31.118158 [INFO] [3899965] [T0] [14.192.209.96:20188-H3:B73F1A8117DEDB8C-20#APVH_mypriv.online:443] Cookie len: 713, XSRF-TOKEN=eyJpdiI6Ijh0Vlg1WXlSNUdCZ3c3SE41RGdOM0E9PSIsInZhbHVlIjoiUHY1cXd3UFRsejJIQjVSTmp4ZW1nWWE1TGhsNlY5T1BMRXRlSk41Y0w1QnhZS3FZQ0taVGZ2bDZnZW11OEdlelZONHltVEJkaVFaeUJLcFZZSEYyNFlQQ3k0Q1BEN3EyMUtDL0V0WFV0d3hYN1JoeVdQdlV4bExSRW44eG1CdDAiLCJtYWMiOiJlNjE5YjA0NWJmYTgwODRiYzE3NGNlYjBhMjk4OWVkY2NjZGVhMWQzOTUyZTdmZjllNzMxOTJkZmM1MjgwMjFjIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InYybHMvYVR0Y2RGcFdkYThBMjhubGc9PSIsInZhbHVlIjoiNUFHMi9DaWxmdlJPV3lvUmZEWXZDWStjWVBBZ1dJVmNCNm5xMGNWWmV6VnpNYUI2czNoNVRudDJNVFB0QURYY0xlK0RnbHB0R3ViWkFLb3F4UGxBc25Dd3ozZkxCVDV1RjFEY2xrdVhQVU51TU92azRHNDgyd2xxd3lIeXgrazYiLCJtYWMiOiIwY2Q0ZmFjMjZlMmNiOTk0YWM5MjZmYzc0Y2ZkYjYwMzM3YzgwOTQ0NTdkYTA2YzJjMzQxMDliMGMzY2Y4MGM2IiwidGFnIjoiIn0%3D
+2022-01-24 21:25:57.038751 [ERROR] [3899965] [T0] [14.192.209.96:20188-H3:B73F1A8117DEDB8C-32#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:25:57.038787 [NOTICE] [3899965] [T0] [14.192.209.96:20188-H3:B73F1A8117DEDB8C-32#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:25:57.038794 [INFO] [3899965] [T0] [14.192.209.96:20188-H3:B73F1A8117DEDB8C-32#APVH_mypriv.online:443] Cookie len: 713, XSRF-TOKEN=eyJpdiI6Ijh0Vlg1WXlSNUdCZ3c3SE41RGdOM0E9PSIsInZhbHVlIjoiUHY1cXd3UFRsejJIQjVSTmp4ZW1nWWE1TGhsNlY5T1BMRXRlSk41Y0w1QnhZS3FZQ0taVGZ2bDZnZW11OEdlelZONHltVEJkaVFaeUJLcFZZSEYyNFlQQ3k0Q1BEN3EyMUtDL0V0WFV0d3hYN1JoeVdQdlV4bExSRW44eG1CdDAiLCJtYWMiOiJlNjE5YjA0NWJmYTgwODRiYzE3NGNlYjBhMjk4OWVkY2NjZGVhMWQzOTUyZTdmZjllNzMxOTJkZmM1MjgwMjFjIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InYybHMvYVR0Y2RGcFdkYThBMjhubGc9PSIsInZhbHVlIjoiNUFHMi9DaWxmdlJPV3lvUmZEWXZDWStjWVBBZ1dJVmNCNm5xMGNWWmV6VnpNYUI2czNoNVRudDJNVFB0QURYY0xlK0RnbHB0R3ViWkFLb3F4UGxBc25Dd3ozZkxCVDV1RjFEY2xrdVhQVU51TU92azRHNDgyd2xxd3lIeXgrazYiLCJtYWMiOiIwY2Q0ZmFjMjZlMmNiOTk0YWM5MjZmYzc0Y2ZkYjYwMzM3YzgwOTQ0NTdkYTA2YzJjMzQxMDliMGMzY2Y4MGM2IiwidGFnIjoiIn0%3D
+2022-01-24 21:26:02.440173 [ERROR] [3899965] [T0] [14.192.209.96:20188-H3:B73F1A8117DEDB8C-36#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:26:02.440217 [NOTICE] [3899965] [T0] [14.192.209.96:20188-H3:B73F1A8117DEDB8C-36#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:26:02.440225 [INFO] [3899965] [T0] [14.192.209.96:20188-H3:B73F1A8117DEDB8C-36#APVH_mypriv.online:443] Cookie len: 713, XSRF-TOKEN=eyJpdiI6Ijh0Vlg1WXlSNUdCZ3c3SE41RGdOM0E9PSIsInZhbHVlIjoiUHY1cXd3UFRsejJIQjVSTmp4ZW1nWWE1TGhsNlY5T1BMRXRlSk41Y0w1QnhZS3FZQ0taVGZ2bDZnZW11OEdlelZONHltVEJkaVFaeUJLcFZZSEYyNFlQQ3k0Q1BEN3EyMUtDL0V0WFV0d3hYN1JoeVdQdlV4bExSRW44eG1CdDAiLCJtYWMiOiJlNjE5YjA0NWJmYTgwODRiYzE3NGNlYjBhMjk4OWVkY2NjZGVhMWQzOTUyZTdmZjllNzMxOTJkZmM1MjgwMjFjIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InYybHMvYVR0Y2RGcFdkYThBMjhubGc9PSIsInZhbHVlIjoiNUFHMi9DaWxmdlJPV3lvUmZEWXZDWStjWVBBZ1dJVmNCNm5xMGNWWmV6VnpNYUI2czNoNVRudDJNVFB0QURYY0xlK0RnbHB0R3ViWkFLb3F4UGxBc25Dd3ozZkxCVDV1RjFEY2xrdVhQVU51TU92azRHNDgyd2xxd3lIeXgrazYiLCJtYWMiOiIwY2Q0ZmFjMjZlMmNiOTk0YWM5MjZmYzc0Y2ZkYjYwMzM3YzgwOTQ0NTdkYTA2YzJjMzQxMDliMGMzY2Y4MGM2IiwidGFnIjoiIn0%3D
+2022-01-24 21:26:04.064254 [ERROR] [3899965] [T0] [14.192.209.96:20188-H3:B73F1A8117DEDB8C-40#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:26:04.064290 [NOTICE] [3899965] [T0] [14.192.209.96:20188-H3:B73F1A8117DEDB8C-40#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:26:04.064301 [INFO] [3899965] [T0] [14.192.209.96:20188-H3:B73F1A8117DEDB8C-40#APVH_mypriv.online:443] Cookie len: 713, XSRF-TOKEN=eyJpdiI6Ijh0Vlg1WXlSNUdCZ3c3SE41RGdOM0E9PSIsInZhbHVlIjoiUHY1cXd3UFRsejJIQjVSTmp4ZW1nWWE1TGhsNlY5T1BMRXRlSk41Y0w1QnhZS3FZQ0taVGZ2bDZnZW11OEdlelZONHltVEJkaVFaeUJLcFZZSEYyNFlQQ3k0Q1BEN3EyMUtDL0V0WFV0d3hYN1JoeVdQdlV4bExSRW44eG1CdDAiLCJtYWMiOiJlNjE5YjA0NWJmYTgwODRiYzE3NGNlYjBhMjk4OWVkY2NjZGVhMWQzOTUyZTdmZjllNzMxOTJkZmM1MjgwMjFjIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InYybHMvYVR0Y2RGcFdkYThBMjhubGc9PSIsInZhbHVlIjoiNUFHMi9DaWxmdlJPV3lvUmZEWXZDWStjWVBBZ1dJVmNCNm5xMGNWWmV6VnpNYUI2czNoNVRudDJNVFB0QURYY0xlK0RnbHB0R3ViWkFLb3F4UGxBc25Dd3ozZkxCVDV1RjFEY2xrdVhQVU51TU92azRHNDgyd2xxd3lIeXgrazYiLCJtYWMiOiIwY2Q0ZmFjMjZlMmNiOTk0YWM5MjZmYzc0Y2ZkYjYwMzM3YzgwOTQ0NTdkYTA2YzJjMzQxMDliMGMzY2Y4MGM2IiwidGFnIjoiIn0%3D
+2022-01-24 21:28:48.961675 [ERROR] [3899964] [T0] [14.192.213.112:51871:HTTP2-1#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:28:48.961718 [NOTICE] [3899964] [T0] [14.192.213.112:51871:HTTP2-1#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:28:48.961728 [INFO] [3899964] [T0] [14.192.213.112:51871:HTTP2-1#APVH_mypriv.online:443] Cookie len: 713, XSRF-TOKEN=eyJpdiI6Ijh0Vlg1WXlSNUdCZ3c3SE41RGdOM0E9PSIsInZhbHVlIjoiUHY1cXd3UFRsejJIQjVSTmp4ZW1nWWE1TGhsNlY5T1BMRXRlSk41Y0w1QnhZS3FZQ0taVGZ2bDZnZW11OEdlelZONHltVEJkaVFaeUJLcFZZSEYyNFlQQ3k0Q1BEN3EyMUtDL0V0WFV0d3hYN1JoeVdQdlV4bExSRW44eG1CdDAiLCJtYWMiOiJlNjE5YjA0NWJmYTgwODRiYzE3NGNlYjBhMjk4OWVkY2NjZGVhMWQzOTUyZTdmZjllNzMxOTJkZmM1MjgwMjFjIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InYybHMvYVR0Y2RGcFdkYThBMjhubGc9PSIsInZhbHVlIjoiNUFHMi9DaWxmdlJPV3lvUmZEWXZDWStjWVBBZ1dJVmNCNm5xMGNWWmV6VnpNYUI2czNoNVRudDJNVFB0QURYY0xlK0RnbHB0R3ViWkFLb3F4UGxBc25Dd3ozZkxCVDV1RjFEY2xrdVhQVU51TU92azRHNDgyd2xxd3lIeXgrazYiLCJtYWMiOiIwY2Q0ZmFjMjZlMmNiOTk0YWM5MjZmYzc0Y2ZkYjYwMzM3YzgwOTQ0NTdkYTA2YzJjMzQxMDliMGMzY2Y4MGM2IiwidGFnIjoiIn0%3D
+2022-01-24 21:29:35.961639 [ERROR] [3899964] [T0] [14.192.213.112:56042:HTTP2-1#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:29:35.961707 [NOTICE] [3899964] [T0] [14.192.213.112:56042:HTTP2-1#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:29:35.961714 [INFO] [3899964] [T0] [14.192.213.112:56042:HTTP2-1#APVH_mypriv.online:443] Cookie len: 713, XSRF-TOKEN=eyJpdiI6Ijh0Vlg1WXlSNUdCZ3c3SE41RGdOM0E9PSIsInZhbHVlIjoiUHY1cXd3UFRsejJIQjVSTmp4ZW1nWWE1TGhsNlY5T1BMRXRlSk41Y0w1QnhZS3FZQ0taVGZ2bDZnZW11OEdlelZONHltVEJkaVFaeUJLcFZZSEYyNFlQQ3k0Q1BEN3EyMUtDL0V0WFV0d3hYN1JoeVdQdlV4bExSRW44eG1CdDAiLCJtYWMiOiJlNjE5YjA0NWJmYTgwODRiYzE3NGNlYjBhMjk4OWVkY2NjZGVhMWQzOTUyZTdmZjllNzMxOTJkZmM1MjgwMjFjIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InYybHMvYVR0Y2RGcFdkYThBMjhubGc9PSIsInZhbHVlIjoiNUFHMi9DaWxmdlJPV3lvUmZEWXZDWStjWVBBZ1dJVmNCNm5xMGNWWmV6VnpNYUI2czNoNVRudDJNVFB0QURYY0xlK0RnbHB0R3ViWkFLb3F4UGxBc25Dd3ozZkxCVDV1RjFEY2xrdVhQVU51TU92azRHNDgyd2xxd3lIeXgrazYiLCJtYWMiOiIwY2Q0ZmFjMjZlMmNiOTk0YWM5MjZmYzc0Y2ZkYjYwMzM3YzgwOTQ0NTdkYTA2YzJjMzQxMDliMGMzY2Y4MGM2IiwidGFnIjoiIn0%3D
+2022-01-24 21:29:39.277183 [ERROR] [3899963] [T0] [14.192.213.112:56049:HTTP2-1#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:29:39.277225 [NOTICE] [3899963] [T0] [14.192.213.112:56049:HTTP2-1#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:29:39.277235 [INFO] [3899963] [T0] [14.192.213.112:56049:HTTP2-1#APVH_mypriv.online:443] Cookie len: 713, XSRF-TOKEN=eyJpdiI6Ijh0Vlg1WXlSNUdCZ3c3SE41RGdOM0E9PSIsInZhbHVlIjoiUHY1cXd3UFRsejJIQjVSTmp4ZW1nWWE1TGhsNlY5T1BMRXRlSk41Y0w1QnhZS3FZQ0taVGZ2bDZnZW11OEdlelZONHltVEJkaVFaeUJLcFZZSEYyNFlQQ3k0Q1BEN3EyMUtDL0V0WFV0d3hYN1JoeVdQdlV4bExSRW44eG1CdDAiLCJtYWMiOiJlNjE5YjA0NWJmYTgwODRiYzE3NGNlYjBhMjk4OWVkY2NjZGVhMWQzOTUyZTdmZjllNzMxOTJkZmM1MjgwMjFjIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InYybHMvYVR0Y2RGcFdkYThBMjhubGc9PSIsInZhbHVlIjoiNUFHMi9DaWxmdlJPV3lvUmZEWXZDWStjWVBBZ1dJVmNCNm5xMGNWWmV6VnpNYUI2czNoNVRudDJNVFB0QURYY0xlK0RnbHB0R3ViWkFLb3F4UGxBc25Dd3ozZkxCVDV1RjFEY2xrdVhQVU51TU92azRHNDgyd2xxd3lIeXgrazYiLCJtYWMiOiIwY2Q0ZmFjMjZlMmNiOTk0YWM5MjZmYzc0Y2ZkYjYwMzM3YzgwOTQ0NTdkYTA2YzJjMzQxMDliMGMzY2Y4MGM2IiwidGFnIjoiIn0%3D
+2022-01-24 21:33:19.236700 [ERROR] [3899965] [T0] [14.192.213.112:26913:HTTP2-1#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:33:19.236742 [NOTICE] [3899965] [T0] [14.192.213.112:26913:HTTP2-1#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:33:19.236755 [INFO] [3899965] [T0] [14.192.213.112:26913:HTTP2-1#APVH_mypriv.online:443] Cookie len: 713, XSRF-TOKEN=eyJpdiI6Ijh0Vlg1WXlSNUdCZ3c3SE41RGdOM0E9PSIsInZhbHVlIjoiUHY1cXd3UFRsejJIQjVSTmp4ZW1nWWE1TGhsNlY5T1BMRXRlSk41Y0w1QnhZS3FZQ0taVGZ2bDZnZW11OEdlelZONHltVEJkaVFaeUJLcFZZSEYyNFlQQ3k0Q1BEN3EyMUtDL0V0WFV0d3hYN1JoeVdQdlV4bExSRW44eG1CdDAiLCJtYWMiOiJlNjE5YjA0NWJmYTgwODRiYzE3NGNlYjBhMjk4OWVkY2NjZGVhMWQzOTUyZTdmZjllNzMxOTJkZmM1MjgwMjFjIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InYybHMvYVR0Y2RGcFdkYThBMjhubGc9PSIsInZhbHVlIjoiNUFHMi9DaWxmdlJPV3lvUmZEWXZDWStjWVBBZ1dJVmNCNm5xMGNWWmV6VnpNYUI2czNoNVRudDJNVFB0QURYY0xlK0RnbHB0R3ViWkFLb3F4UGxBc25Dd3ozZkxCVDV1RjFEY2xrdVhQVU51TU92azRHNDgyd2xxd3lIeXgrazYiLCJtYWMiOiIwY2Q0ZmFjMjZlMmNiOTk0YWM5MjZmYzc0Y2ZkYjYwMzM3YzgwOTQ0NTdkYTA2YzJjMzQxMDliMGMzY2Y4MGM2IiwidGFnIjoiIn0%3D
+2022-01-24 21:33:22.534745 [ERROR] [3899965] [T0] [14.192.213.112:26902:HTTP2-1#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:33:22.534814 [NOTICE] [3899965] [T0] [14.192.213.112:26902:HTTP2-1#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:33:42.238769 [ERROR] [3899963] [T0] [14.192.213.112:16864-Q:62A7397300DF4B5B-9#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:33:42.238803 [NOTICE] [3899963] [T0] [14.192.213.112:16864-Q:62A7397300DF4B5B-9#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:34:15.039408 [ERROR] [3899964] [T0] [14.192.213.112:26924:HTTP2-1#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:34:15.039455 [NOTICE] [3899964] [T0] [14.192.213.112:26924:HTTP2-1#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:34:15.039463 [INFO] [3899964] [T0] [14.192.213.112:26924:HTTP2-1#APVH_mypriv.online:443] Cookie len: 713, XSRF-TOKEN=eyJpdiI6Ijh0Vlg1WXlSNUdCZ3c3SE41RGdOM0E9PSIsInZhbHVlIjoiUHY1cXd3UFRsejJIQjVSTmp4ZW1nWWE1TGhsNlY5T1BMRXRlSk41Y0w1QnhZS3FZQ0taVGZ2bDZnZW11OEdlelZONHltVEJkaVFaeUJLcFZZSEYyNFlQQ3k0Q1BEN3EyMUtDL0V0WFV0d3hYN1JoeVdQdlV4bExSRW44eG1CdDAiLCJtYWMiOiJlNjE5YjA0NWJmYTgwODRiYzE3NGNlYjBhMjk4OWVkY2NjZGVhMWQzOTUyZTdmZjllNzMxOTJkZmM1MjgwMjFjIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InYybHMvYVR0Y2RGcFdkYThBMjhubGc9PSIsInZhbHVlIjoiNUFHMi9DaWxmdlJPV3lvUmZEWXZDWStjWVBBZ1dJVmNCNm5xMGNWWmV6VnpNYUI2czNoNVRudDJNVFB0QURYY0xlK0RnbHB0R3ViWkFLb3F4UGxBc25Dd3ozZkxCVDV1RjFEY2xrdVhQVU51TU92azRHNDgyd2xxd3lIeXgrazYiLCJtYWMiOiIwY2Q0ZmFjMjZlMmNiOTk0YWM5MjZmYzc0Y2ZkYjYwMzM3YzgwOTQ0NTdkYTA2YzJjMzQxMDliMGMzY2Y4MGM2IiwidGFnIjoiIn0%3D
+2022-01-24 21:37:48.220162 [ERROR] [3899964] [T0] [14.192.213.112:26923:HTTP2-1#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:37:48.220203 [NOTICE] [3899964] [T0] [14.192.213.112:26923:HTTP2-1#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:37:48.220213 [INFO] [3899964] [T0] [14.192.213.112:26923:HTTP2-1#APVH_mypriv.online:443] Cookie len: 713, XSRF-TOKEN=eyJpdiI6Ijh0Vlg1WXlSNUdCZ3c3SE41RGdOM0E9PSIsInZhbHVlIjoiUHY1cXd3UFRsejJIQjVSTmp4ZW1nWWE1TGhsNlY5T1BMRXRlSk41Y0w1QnhZS3FZQ0taVGZ2bDZnZW11OEdlelZONHltVEJkaVFaeUJLcFZZSEYyNFlQQ3k0Q1BEN3EyMUtDL0V0WFV0d3hYN1JoeVdQdlV4bExSRW44eG1CdDAiLCJtYWMiOiJlNjE5YjA0NWJmYTgwODRiYzE3NGNlYjBhMjk4OWVkY2NjZGVhMWQzOTUyZTdmZjllNzMxOTJkZmM1MjgwMjFjIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InYybHMvYVR0Y2RGcFdkYThBMjhubGc9PSIsInZhbHVlIjoiNUFHMi9DaWxmdlJPV3lvUmZEWXZDWStjWVBBZ1dJVmNCNm5xMGNWWmV6VnpNYUI2czNoNVRudDJNVFB0QURYY0xlK0RnbHB0R3ViWkFLb3F4UGxBc25Dd3ozZkxCVDV1RjFEY2xrdVhQVU51TU92azRHNDgyd2xxd3lIeXgrazYiLCJtYWMiOiIwY2Q0ZmFjMjZlMmNiOTk0YWM5MjZmYzc0Y2ZkYjYwMzM3YzgwOTQ0NTdkYTA2YzJjMzQxMDliMGMzY2Y4MGM2IiwidGFnIjoiIn0%3D
+2022-01-24 21:38:03.563186 [ERROR] [3899963] [T0] [14.192.213.112:26895:HTTP2-1#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:38:03.563227 [NOTICE] [3899963] [T0] [14.192.213.112:26895:HTTP2-1#APVH_mypriv.online:443] Content len: 0, Request line: 'GET /kodan HTTP/1.1'
+2022-01-24 21:38:03.563237 [INFO] [3899963] [T0] [14.192.213.112:26895:HTTP2-1#APVH_mypriv.online:443] Cookie len: 713, XSRF-TOKEN=eyJpdiI6Ijh0Vlg1WXlSNUdCZ3c3SE41RGdOM0E9PSIsInZhbHVlIjoiUHY1cXd3UFRsejJIQjVSTmp4ZW1nWWE1TGhsNlY5T1BMRXRlSk41Y0w1QnhZS3FZQ0taVGZ2bDZnZW11OEdlelZONHltVEJkaVFaeUJLcFZZSEYyNFlQQ3k0Q1BEN3EyMUtDL0V0WFV0d3hYN1JoeVdQdlV4bExSRW44eG1CdDAiLCJtYWMiOiJlNjE5YjA0NWJmYTgwODRiYzE3NGNlYjBhMjk4OWVkY2NjZGVhMWQzOTUyZTdmZjllNzMxOTJkZmM1MjgwMjFjIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InYybHMvYVR0Y2RGcFdkYThBMjhubGc9PSIsInZhbHVlIjoiNUFHMi9DaWxmdlJPV3lvUmZEWXZDWStjWVBBZ1dJVmNCNm5xMGNWWmV6VnpNYUI2czNoNVRudDJNVFB0QURYY0xlK0RnbHB0R3ViWkFLb3F4UGxBc25Dd3ozZkxCVDV1RjFEY2xrdVhQVU51TU92azRHNDgyd2xxd3lIeXgrazYiLCJtYWMiOiIwY2Q0ZmFjMjZlMmNiOTk0YWM5MjZmYzc0Y2ZkYjYwMzM3YzgwOTQ0NTdkYTA2YzJjMzQxMDliMGMzY2Y4MGM2IiwidGFnIjoiIn0%3D
+2022-01-24 21:38:03.563247 [NOTICE] [3899963] [T0] [14.192.213.112:26895:HTTP2-1#APVH_mypriv.online:443] Redirect: #1, URL: /index.php
+2022-01-24 21:39:56.950410 [ERROR] [3899963] [T0] [14.192.213.112:26895:HTTP2-1#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:39:56.950438 [NOTICE] [3899963] [T0] [14.192.213.112:26895:HTTP2-1#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:39:56.950443 [INFO] [3899963] [T0] [14.192.213.112:26895:HTTP2-1#APVH_mypriv.online:443] Cookie len: 713, XSRF-TOKEN=eyJpdiI6Ijh0Vlg1WXlSNUdCZ3c3SE41RGdOM0E9PSIsInZhbHVlIjoiUHY1cXd3UFRsejJIQjVSTmp4ZW1nWWE1TGhsNlY5T1BMRXRlSk41Y0w1QnhZS3FZQ0taVGZ2bDZnZW11OEdlelZONHltVEJkaVFaeUJLcFZZSEYyNFlQQ3k0Q1BEN3EyMUtDL0V0WFV0d3hYN1JoeVdQdlV4bExSRW44eG1CdDAiLCJtYWMiOiJlNjE5YjA0NWJmYTgwODRiYzE3NGNlYjBhMjk4OWVkY2NjZGVhMWQzOTUyZTdmZjllNzMxOTJkZmM1MjgwMjFjIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6InYybHMvYVR0Y2RGcFdkYThBMjhubGc9PSIsInZhbHVlIjoiNUFHMi9DaWxmdlJPV3lvUmZEWXZDWStjWVBBZ1dJVmNCNm5xMGNWWmV6VnpNYUI2czNoNVRudDJNVFB0QURYY0xlK0RnbHB0R3ViWkFLb3F4UGxBc25Dd3ozZkxCVDV1RjFEY2xrdVhQVU51TU92azRHNDgyd2xxd3lIeXgrazYiLCJtYWMiOiIwY2Q0ZmFjMjZlMmNiOTk0YWM5MjZmYzc0Y2ZkYjYwMzM3YzgwOTQ0NTdkYTA2YzJjMzQxMDliMGMzY2Y4MGM2IiwidGFnIjoiIn0%3D
+2022-01-24 21:42:04.498819 [ERROR] [3899963] [T0] [14.192.213.112:26900:HTTP2-1#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:42:04.498853 [NOTICE] [3899963] [T0] [14.192.213.112:26900:HTTP2-1#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:42:07.148964 [ERROR] [3899965] [T0] [14.192.213.112:26901-H3:63E4154D2C5E9E9E-12#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:42:07.148991 [NOTICE] [3899965] [T0] [14.192.213.112:26901-H3:63E4154D2C5E9E9E-12#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:42:09.446499 [ERROR] [3899965] [T0] [14.192.213.112:26901-H3:63E4154D2C5E9E9E-16#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:42:09.446524 [NOTICE] [3899965] [T0] [14.192.213.112:26901-H3:63E4154D2C5E9E9E-16#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:42:24.988363 [ERROR] [3899964] [T0] [51.79.145.204:49404:HTTP2-1#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:42:24.988397 [NOTICE] [3899964] [T0] [51.79.145.204:49404:HTTP2-1#APVH_mypriv.online:443] Content len: 0, Request line: 'HEAD / HTTP/1.1'
+2022-01-24 21:42:51.926926 [ERROR] [3899965] [T0] [210.195.143.231:52038:HTTP2-1#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:42:51.926964 [NOTICE] [3899965] [T0] [210.195.143.231:52038:HTTP2-1#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:43:09.405972 [ERROR] [3899964] [T0] [14.192.213.112:26922-H3:2AFBE4DCC4A7DD69-0#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:43:09.405993 [NOTICE] [3899964] [T0] [14.192.213.112:26922-H3:2AFBE4DCC4A7DD69-0#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:43:24.938767 [ERROR] [3899964] [T0] [210.195.143.231:55170-H3:367A5C4E213A7697-0#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:43:24.938806 [NOTICE] [3899964] [T0] [210.195.143.231:55170-H3:367A5C4E213A7697-0#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:44:22.027420 [ERROR] [3899964] [T0] [210.195.143.231:61158-H3:29A099813BC6AF86-0#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:44:22.027439 [NOTICE] [3899964] [T0] [210.195.143.231:61158-H3:29A099813BC6AF86-0#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:45:12.844454 [ERROR] [3899964] [T0] [210.195.143.231:61158-H3:29A099813BC6AF86-4#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:45:12.844489 [NOTICE] [3899964] [T0] [210.195.143.231:61158-H3:29A099813BC6AF86-4#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:45:14.583891 [ERROR] [3899964] [T0] [210.195.143.231:61158-H3:29A099813BC6AF86-8#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:45:14.583933 [NOTICE] [3899964] [T0] [210.195.143.231:61158-H3:29A099813BC6AF86-8#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:45:43.105173 [NOTICE] [3931574] [T0] [210.195.143.231:56306-H3:92FB3F37E8BC5E79-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:46:05.066359 [NOTICE] [3931574] [T0] [210.195.143.231:56306-H3:92FB3F37E8BC5E79-4#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:46:06.620226 [NOTICE] [3931574] [T0] [210.195.143.231:56306-H3:92FB3F37E8BC5E79-8#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:46:16.558849 [NOTICE] [3931574] [T0] [210.195.143.231:56306-H3:92FB3F37E8BC5E79-12#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:46:18.184256 [NOTICE] [3931574] [T0] [210.195.143.231:56306-H3:92FB3F37E8BC5E79-16#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:46:19.650407 [NOTICE] [3931574] [T0] [210.195.143.231:56306-H3:92FB3F37E8BC5E79-20#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:46:31.541770 [NOTICE] [3931574] [T0] [210.195.143.231:56306-H3:92FB3F37E8BC5E79-24#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:47:13.055598 [NOTICE] [3931576] [T0] [210.195.143.231:52025-H3:D68BC42E24DB3EE7-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:47:33.974507 [NOTICE] [3931576] [T0] [210.195.143.231:52025-H3:D68BC42E24DB3EE7-4#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:47:50.371003 [NOTICE] [3931574] [T0] [14.192.213.112:26894-H3:696E319C3990A0EF-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:48:06.734306 [NOTICE] [3931576] [T0] [210.195.143.231:59032-H3:7DD467FA14B1A816-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:48:08.695730 [NOTICE] [3931576] [T0] [210.195.143.231:59032-H3:7DD467FA14B1A816-4#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:48:20.842552 [NOTICE] [3931576] [T0] [210.195.143.231:59032-H3:7DD467FA14B1A816-8#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:48:28.639271 [NOTICE] [3931576] [T0] [210.195.143.231:59032-H3:7DD467FA14B1A816-12#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:48:30.024713 [NOTICE] [3931576] [T0] [210.195.143.231:59032-H3:7DD467FA14B1A816-16#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:48:47.040701 [NOTICE] [3931578] [T0] [14.192.213.112:26900-H3:234015141AED738A-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:49:10.008061 [NOTICE] [3931574] [T0] [210.195.143.231:59608-H3:57378D5ED1EC69C7-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:49:11.316156 [NOTICE] [3931574] [T0] [210.195.143.231:59608-H3:57378D5ED1EC69C7-4#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:49:35.748408 [ERROR] [3960643] [T0] [210.195.143.231:53578-H3:E181E1E22DBC6469-0#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:49:35.748436 [NOTICE] [3960643] [T0] [210.195.143.231:53578-H3:E181E1E22DBC6469-0#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:49:38.455552 [ERROR] [3960643] [T0] [210.195.143.231:53578-H3:E181E1E22DBC6469-4#APVH_mypriv.online:443] MIME type [application/x-httpd-alt-php81] for suffix '.php' does not allow serving as static file, access denied!
+2022-01-24 21:49:38.455602 [NOTICE] [3960643] [T0] [210.195.143.231:53578-H3:E181E1E22DBC6469-4#APVH_mypriv.online:443] Content len: 0, Request line: 'GET / HTTP/1.1'
+2022-01-24 21:49:59.097470 [NOTICE] [3968951] [T0] [210.195.143.231:64637-H3:64FD07ECB7798DD8-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:50:08.119208 [NOTICE] [3968956] [T0] [14.192.213.112:26932-H3:0689789B32AFB890-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:50:30.649385 [NOTICE] [3974546] [T0] [14.192.213.112:26935-H3:006B5D2AF2DE7963-12#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:56:12.078897 [NOTICE] [3986536] [T0] [14.192.213.112:56009-H3:A82ADC393ACED82F-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 21:56:48.223958 [NOTICE] [3986534] [T0] [175.145.212.10:45002:HTTP2-1#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 22:03:34.426925 [NOTICE] [3986534] [T0] [14.192.213.112:56018-H3:AF3B8333087F4CB7-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 22:22:25.070459 [NOTICE] [3986535] [T0] [14.192.213.112:56062-H3:B9CD1B97E4AAB9EE-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 22:26:15.229355 [NOTICE] [3986534] [T0] [14.192.213.112:56053-H3:68BB060C6AAA10D5-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 22:34:48.212442 [NOTICE] [3986536] [T0] [14.192.213.112:56033-Q:6D7773D77D08A9FD-5#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 22:34:51.022703 [NOTICE] [3986536] [T0] [14.192.213.112:56033-Q:6D7773D77D08A9FD-7#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 22:40:04.074089 [NOTICE] [4047778] [T0] [210.195.143.231:49869-H3:A656092C9C0B345D-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 22:58:59.412115 [NOTICE] [4061240] [T0] [3.250.155.188:37012:HTTP2-1#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 22:58:59.047846 [NOTICE] [4061239] [T0] [175.145.212.10:60771:HTTP2-1#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 22:59:12.081517 [NOTICE] [4061239] [T0] [175.145.212.10:59840-H3:5F4E0EB53305CAEE-4#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 22:59:22.508397 [NOTICE] [4061239] [T0] [175.145.212.10:59840-H3:5F4E0EB53305CAEE-8#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 22:59:23.294340 [NOTICE] [4061239] [T0] [175.145.212.10:59840-H3:5F4E0EB53305CAEE-12#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 22:59:23.835255 [NOTICE] [4061239] [T0] [175.145.212.10:59840-H3:5F4E0EB53305CAEE-16#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 23:05:41.030049 [NOTICE] [4100794] [T0] [14.192.213.112:26896-H3:30205DF65D6B5054-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 23:34:40.019502 [NOTICE] [4157497] [T0] [14.192.213.112:26930-H3:E5636AE279BFA1CB-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 23:36:09.732039 [NOTICE] [4161480] [T0] [14.192.213.112:26901-H3:300E1B36170E9246-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 23:36:10.057059 [NOTICE] [4157499] [T0] [14.192.213.112:26882-H3:D7B6B3E87ED08409-16#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 23:36:35.772204 [NOTICE] [4161480] [T0] [14.192.213.112:26901-H3:300E1B36170E9246-4#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 23:39:16.052854 [NOTICE] [4161479] [T0] [14.192.213.112:26913-H3:28D4CB16F68B2208-160#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-24 23:40:01.748120 [NOTICE] [4161479] [T0] [14.192.213.112:26937-H3:0FEDA2B590FE2E9F-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.2". You are running 7.4.27. in /var/www/vhosts/mypriv.online/vendor/composer/platform_check.php on line 24
+2022-01-29 05:55:52.302785 [NOTICE] [3475770] [T4] [20.79.204.11:52796#APVH_mypriv.online:443:MODSEC] mod_security rule [id "77316757"] at [/etc/httpd/conf/modsecurity.d/rules/custom/007_i360_4_custom.conf:416] triggered! 
+2022-02-01 01:01:57.151835 [INFO] [1154401] [T0] [HTAccess] Configuration file [/var/www/vhosts/mypriv.online/httpdocs/.htaccess] has been removed.
+2022-02-01 01:01:57.151873 [INFO] [1154401] [T0] [14.192.208.48:32695-H3:28914D13E490AD91-0#APVH_mypriv.online:443] File not found [/var/www/vhosts/mypriv.online/httpdocs/]
+2022-02-01 01:01:57.151879 [INFO] [1154401] [T0] [14.192.208.48:32695-H3:28914D13E490AD91-0#APVH_mypriv.online:443] Cannot found appropriate handler for [/]
+2022-02-01 01:01:58.065813 [INFO] [1154401] [T0] [14.192.208.48:32695-H3:28914D13E490AD91-12#APVH_mypriv.online:443] Cannot found appropriate handler for [/favicon.ico]
+2022-02-01 01:58:31.774778 [NOTICE] [1280168] [T4] [14.192.208.48:32674-H3:5DC773CE31BE5821-16#APVH_mypriv.online:443:MODSEC] mod_security rule [id "77316797"] at [/etc/httpd/conf/modsecurity.d/rules/custom/002_i360_1_infectors.conf:236] triggered! 
+2022-02-01 02:03:32.499862 [NOTICE] [1280167] [T7] [14.192.208.48:32657-H3:81C9367DC84BD6C4-112#APVH_mypriv.online:443:MODSEC] mod_security rule [id "77316797"] at [/etc/httpd/conf/modsecurity.d/rules/custom/002_i360_1_infectors.conf:236] triggered! 
+2022-02-01 02:03:47.377874 [NOTICE] [1280167] [T10] [14.192.208.48:32657-H3:81C9367DC84BD6C4-136#APVH_mypriv.online:443:MODSEC] mod_security rule [id "77316797"] at [/etc/httpd/conf/modsecurity.d/rules/custom/002_i360_1_infectors.conf:236] triggered! 
+2022-02-01 02:06:29.548180 [NOTICE] [1280166] [T2] [14.192.208.48:32693-H3:4D949A19C97CD208-8#APVH_mypriv.online:443:MODSEC] mod_security rule [id "77316797"] at [/etc/httpd/conf/modsecurity.d/rules/custom/002_i360_1_infectors.conf:236] triggered! 
+2022-02-01 02:11:42.043312 [NOTICE] [1280166] [T3] [14.192.208.48:1287-H3:1F25FE1669E9CBB8-56#APVH_mypriv.online:443:MODSEC] mod_security rule [id "77316797"] at [/etc/httpd/conf/modsecurity.d/rules/custom/002_i360_1_infectors.conf:236] triggered! 
+2022-02-01 02:46:31.023151 [NOTICE] [1584784] [T9] [14.192.208.48:32688-H3:5C2BC5CC570A770F-0#APVH_mypriv.online:443:MODSEC] mod_security rule [id "77316797"] at [/etc/httpd/conf/modsecurity.d/rules/custom/002_i360_1_infectors.conf:236] triggered! 
+2022-02-01 03:31:23.249222 [NOTICE] [1584805] [T1] [14.192.208.48:32665-H3:1DA283E99423A1FD-0#APVH_mypriv.online:443:MODSEC] mod_security rule [id "77316797"] at [/etc/httpd/conf/modsecurity.d/rules/custom/002_i360_1_infectors.conf:236] triggered! 
+2022-02-01 03:31:48.752881 [NOTICE] [1584805] [T2] [14.192.208.48:32665-H3:1DA283E99423A1FD-16#APVH_mypriv.online:443:MODSEC] mod_security rule [id "77316797"] at [/etc/httpd/conf/modsecurity.d/rules/custom/002_i360_1_infectors.conf:236] triggered! 
+2022-02-01 03:42:55.427453 [INFO] [1672779] [T0] [14.192.208.48:1309-H3:1C7C832ED2C29415-0#APVH_mypriv.online:443] File not found [/var/www/vhosts/mypriv.online/httpdocs/]
+2022-02-01 03:42:55.427495 [INFO] [1672779] [T0] [14.192.208.48:1309-H3:1C7C832ED2C29415-0#APVH_mypriv.online:443] Cannot found appropriate handler for [/]
+2022-02-01 03:42:55.427532 [INFO] [1672779] [T0] [14.192.208.48:1309-H3:1C7C832ED2C29415-0#APVH_mypriv.online:443] File not found [/var/www/vhosts/mypriv.online/error_docs/not_found.html]
+2022-02-01 03:42:55.427545 [INFO] [1672779] [T0] [14.192.208.48:1309-H3:1C7C832ED2C29415-0#APVH_mypriv.online:443] Cannot found appropriate handler for [/error_docs/not_found.html]
+2022-02-23 07:48:16.467197 [INFO] [3488648] [T0] [HTAccess] Configuration file [/var/www/vhosts/mypriv.online/httpdocs/.htaccess] has been removed.
+2022-02-23 07:48:16.467238 [INFO] [3488648] [T0] [14.192.209.157:15398-H3:B44C6DE8C986713C-0#APVH_mypriv.online:443] File not found [/var/www/vhosts/mypriv.online/httpdocs/]
+2022-02-23 07:48:16.467246 [INFO] [3488648] [T0] [14.192.209.157:15398-H3:B44C6DE8C986713C-0#APVH_mypriv.online:443] Cannot found appropriate handler for [/]
+2022-02-23 07:48:20.780774 [INFO] [3488648] [T0] [14.192.209.157:15398-H3:B44C6DE8C986713C-12#APVH_mypriv.online:443] File not found [/var/www/vhosts/mypriv.online/httpdocs/]
+2022-02-23 07:48:20.780844 [INFO] [3488648] [T0] [14.192.209.157:15398-H3:B44C6DE8C986713C-12#APVH_mypriv.online:443] Cannot found appropriate handler for [/]
+2022-02-23 07:48:39.135372 [INFO] [3488648] [T0] [14.192.209.157:15398-H3:B44C6DE8C986713C-16#APVH_mypriv.online:443] File not found [/var/www/vhosts/mypriv.online/httpdocs/whatsapp.php]
+2022-02-23 07:48:39.135420 [INFO] [3488648] [T0] [14.192.209.157:15398-H3:B44C6DE8C986713C-16#APVH_mypriv.online:443] Cannot found appropriate handler for [/whatsapp.php]
+2022-02-23 07:50:04.580772 [INFO] [3488647] [T0] [HTAccess] Configuration file [/var/www/vhosts/mypriv.online/httpdocs/.htaccess] has been removed.
+2022-02-23 07:54:02.671215 [INFO] [3488646] [T0] [HTAccess] Configuration file [/var/www/vhosts/mypriv.online/httpdocs/.htaccess] has been removed.
+2022-02-23 07:54:02.671295 [INFO] [3488646] [T0] [44.201.124.146:33300#APVH_mypriv.online:443] File not found [/var/www/vhosts/mypriv.online/httpdocs/whatsapp-status] 
+2022-02-23 07:54:03.483897 [INFO] [3488647] [T0] [3.82.114.54:59090#APVH_mypriv.online:443] File not found [/var/www/vhosts/mypriv.online/httpdocs/whatsapp-status] 
+2022-02-23 07:54:03.481610 [INFO] [3488646] [T0] [3.82.114.54:59092#APVH_mypriv.online:443] File not found [/var/www/vhosts/mypriv.online/httpdocs/whatsapp-status] 
+2022-02-23 07:54:37.693209 [INFO] [3488648] [T0] [34.224.22.60:33084#APVH_mypriv.online:443] File not found [/var/www/vhosts/mypriv.online/httpdocs/whatsapp-status] 
+2022-02-23 07:54:38.497810 [INFO] [3488647] [T0] [3.80.130.129:42876#APVH_mypriv.online:443] File not found [/var/www/vhosts/mypriv.online/httpdocs/whatsapp-status] 
+2022-02-23 07:54:38.483756 [INFO] [3488646] [T0] [34.230.29.233:46030#APVH_mypriv.online:443] File not found [/var/www/vhosts/mypriv.online/httpdocs/whatsapp-status] 
+2022-02-25 10:57:52.542031 [NOTICE] [1874868] [T0] [14.192.208.50:21724-H3:39DA2300725D4E23-4#APVH_mypriv.online:443] [STDERR] PHP Warning:  file_get_contents(test.txt): Failed to open stream: No such file or directory in /var/www/vhosts/mypriv.online/httpdocs/test/index.php on line 3
+2022-02-25 10:58:59.312150 [NOTICE] [1874868] [T0] [14.192.208.50:21758-H3:C94F6246A47100C7-0#APVH_mypriv.online:443] [STDERR] PHP Warning:  file_get_contents(test.txt): Failed to open stream: No such file or directory in /var/www/vhosts/mypriv.online/httpdocs/test/index.php on line 3
+2022-03-01 09:57:03.106284 [NOTICE] [1170952] [T0] [14.192.213.139:13470-H3:A7BF213D0D60C785-0#APVH_mypriv.online:443] [STDERR] PHP Warning:  Undefined array key "From" in /var/www/vhosts/mypriv.online/httpdocs/webhook/index.php on line 13
+2022-03-01 09:57:03.106340 [NOTICE] [1170952] [T0] [14.192.213.139:13470-H3:A7BF213D0D60C785-0#APVH_mypriv.online:443] [STDERR] PHP Warning:  Undefined array key "Body" in /var/www/vhosts/mypriv.online/httpdocs/webhook/index.php on line 14
+2022-03-01 09:57:03.106896 [NOTICE] [1170952] [T0] [14.192.213.139:13470-H3:A7BF213D0D60C785-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught Error: Class "Twilio\Domain" not found in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Api.php:63
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/composer/ClassLoader.php(444): include()
+#1 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile()
+#2 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(413): Composer\Autoload\ClassLoader->loadClass()
+#3 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(976): Twilio\Rest\Client->getApi()
+#4 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(531): Twilio\Rest\Client->__get()
+#5 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(976): Twilio\Rest\Client->getMessages()
+#6 /var/www/vhosts/mypriv.online/httpdocs/webhook/index.php(27): Twilio\Rest\Client->__get()
+#7 {main}
+  thrown in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Api.php on line 63
+2022-03-01 09:59:06.015056 [NOTICE] [1170938] [T0] [14.192.213.139:13461-H3:F127C42AD06A9015-0#APVH_mypriv.online:443] [STDERR] PHP Warning:  Undefined array key "From" in /var/www/vhosts/mypriv.online/httpdocs/webhook/index.php on line 13
+2022-03-01 09:59:06.015109 [NOTICE] [1170938] [T0] [14.192.213.139:13461-H3:F127C42AD06A9015-0#APVH_mypriv.online:443] [STDERR] PHP Warning:  Undefined array key "Body" in /var/www/vhosts/mypriv.online/httpdocs/webhook/index.php on line 14
+2022-03-01 09:59:06.015514 [NOTICE] [1170938] [T0] [14.192.213.139:13461-H3:F127C42AD06A9015-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught Error: Class "Twilio\Domain" not found in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Api.php:63
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/composer/ClassLoader.php(444): include()
+#1 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile()
+#2 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(413): Composer\Autoload\ClassLoader->loadClass()
+#3 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(976): Twilio\Rest\Client->getApi()
+#4 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(531): Twilio\Rest\Client->__get()
+#5 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(976): Twilio\Rest\Client->getMessages()
+#6 /var/www/vhosts/mypriv.online/httpdocs/webhook/index.php(27): Twilio\Rest\Client->__get()
+#7 {main}
+  thrown in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Api.php on line 63
+2022-03-01 09:59:58.197872 [NOTICE] [1170938] [T0] [14.192.213.139:16893-H3:CBDB3515A46FEC0E-0#APVH_mypriv.online:443] [STDERR] PHP Warning:  Undefined array key "From" in /var/www/vhosts/mypriv.online/httpdocs/webhook/index.php on line 13
+2022-03-01 09:59:58.197903 [NOTICE] [1170938] [T0] [14.192.213.139:16893-H3:CBDB3515A46FEC0E-0#APVH_mypriv.online:443] [STDERR] PHP Warning:  Undefined array key "Body" in /var/www/vhosts/mypriv.online/httpdocs/webhook/index.php on line 14
+2022-03-01 09:59:58.198633 [NOTICE] [1170938] [T0] [14.192.213.139:16893-H3:CBDB3515A46FEC0E-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught Error: Class "Twilio\Domain" not found in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Api.php:63
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/composer/ClassLoader.php(444): include()
+#1 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile()
+#2 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(413): Composer\Autoload\ClassLoader->loadClass()
+#3 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(976): Twilio\Rest\Client->getApi()
+#4 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(531): Twilio\Rest\Client->__get()
+#5 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(976): Twilio\Rest\Client->getMessages()
+#6 /var/www/vhosts/mypriv.online/httpdocs/webhook/index.php(27): Twilio\Rest\Client->__get()
+#7 {main}
+  thrown in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Api.php on line 63
+2022-03-01 10:00:03.749201 [NOTICE] [1170938] [T0] [14.192.213.139:16893-H3:CBDB3515A46FEC0E-4#APVH_mypriv.online:443] [STDERR] PHP Warning:  Undefined array key "From" in /var/www/vhosts/mypriv.online/httpdocs/webhook/webhook.php on line 13
+2022-03-01 10:00:03.749237 [NOTICE] [1170938] [T0] [14.192.213.139:16893-H3:CBDB3515A46FEC0E-4#APVH_mypriv.online:443] [STDERR] PHP Warning:  Undefined array key "Body" in /var/www/vhosts/mypriv.online/httpdocs/webhook/webhook.php on line 14
+2022-03-01 10:00:03.751907 [NOTICE] [1170938] [T0] [14.192.213.139:16893-H3:CBDB3515A46FEC0E-4#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught Error: Class "Twilio\Domain" not found in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Api.php:63
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/composer/ClassLoader.php(444): include()
+#1 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile()
+#2 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(413): Composer\Autoload\ClassLoader->loadClass()
+#3 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(976): Twilio\Rest\Client->getApi()
+#4 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(531): Twilio\Rest\Client->__get()
+#5 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(976): Twilio\Rest\Client->getMessages()
+#6 /var/www/vhosts/mypriv.online/httpdocs/webhook/webhook.php(27): Twilio\Rest\Client->__get()
+#7 {main}
+  thrown in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Api.php on line 63
+2022-03-01 10:02:00.959823 [NOTICE] [1170952] [T0] [14.192.213.139:20267-H3:7BFC4F6C5CB94F56-0#APVH_mypriv.online:443] [STDERR] PHP Warning:  Undefined array key "From" in /var/www/vhosts/mypriv.online/httpdocs/webhook/index.php on line 13
+2022-03-01 10:02:00.959871 [NOTICE] [1170952] [T0] [14.192.213.139:20267-H3:7BFC4F6C5CB94F56-0#APVH_mypriv.online:443] [STDERR] PHP Warning:  Undefined array key "Body" in /var/www/vhosts/mypriv.online/httpdocs/webhook/index.php on line 14
+2022-03-01 10:02:00.960263 [NOTICE] [1170952] [T0] [14.192.213.139:20267-H3:7BFC4F6C5CB94F56-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught Error: Class "Twilio\Domain" not found in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Api.php:63
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/composer/ClassLoader.php(444): include()
+#1 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile()
+#2 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(413): Composer\Autoload\ClassLoader->loadClass()
+#3 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(976): Twilio\Rest\Client->getApi()
+#4 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(531): Twilio\Rest\Client->__get()
+#5 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(976): Twilio\Rest\Client->getMessages()
+#6 /var/www/vhosts/mypriv.online/httpdocs/webhook/index.php(27): Twilio\Rest\Client->__get()
+#7 {main}
+  thrown in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Api.php on line 63
+2022-03-01 10:02:11.055531 [NOTICE] [1170952] [T0] [14.192.213.139:20267-H3:7BFC4F6C5CB94F56-4#APVH_mypriv.online:443] [STDERR] PHP Warning:  Undefined array key "From" in /var/www/vhosts/mypriv.online/httpdocs/webhook/webhook.php on line 13
+2022-03-01 10:02:11.055578 [NOTICE] [1170952] [T0] [14.192.213.139:20267-H3:7BFC4F6C5CB94F56-4#APVH_mypriv.online:443] [STDERR] PHP Warning:  Undefined array key "Body" in /var/www/vhosts/mypriv.online/httpdocs/webhook/webhook.php on line 14
+2022-03-01 10:02:11.056219 [NOTICE] [1170952] [T0] [14.192.213.139:20267-H3:7BFC4F6C5CB94F56-4#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught Error: Class "Twilio\Domain" not found in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Api.php:63
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/composer/ClassLoader.php(444): include()
+#1 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile()
+#2 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(413): Composer\Autoload\ClassLoader->loadClass()
+#3 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(976): Twilio\Rest\Client->getApi()
+#4 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(531): Twilio\Rest\Client->__get()
+#5 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(976): Twilio\Rest\Client->getMessages()
+#6 /var/www/vhosts/mypriv.online/httpdocs/webhook/webhook.php(27): Twilio\Rest\Client->__get()
+#7 {main}
+  thrown in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Api.php on line 63
+2022-03-01 10:04:18.413750 [NOTICE] [1170938] [T0] [34.230.29.233:46228#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught Error: Class "Twilio\Domain" not found in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Api.php:63
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/composer/ClassLoader.php(444): include()
+#1 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile()
+#2 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(413): Composer\Autoload\ClassLoader->loadClass()
+#3 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(976): Twilio\Rest\Client->getApi()
+#4 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(531): Twilio\Rest\Client->__get()
+#5 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(976): Twilio\Rest\Client->getMessages()
+#6 /var/www/vhosts/mypriv.online/httpdocs/webhook/webhook.php(27): Twilio\Rest\Client->__get()
+#7 {main}
+  thrown in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Api.php on line 63
+2022-03-01 10:11:53.501215 [NOTICE] [1170952] [T0] [14.192.213.139:13492-H3:42C880AB5D6FB809-0#APVH_mypriv.online:443] [STDERR] PHP Warning:  Undefined array key "From" in /var/www/vhosts/mypriv.online/httpdocs/webhook/index.php on line 13
+2022-03-01 10:11:53.501250 [NOTICE] [1170952] [T0] [14.192.213.139:13492-H3:42C880AB5D6FB809-0#APVH_mypriv.online:443] [STDERR] PHP Warning:  Undefined array key "Body" in /var/www/vhosts/mypriv.online/httpdocs/webhook/index.php on line 14
+2022-03-01 10:11:53.501748 [NOTICE] [1170952] [T0] [14.192.213.139:13492-H3:42C880AB5D6FB809-0#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught Error: Class "Twilio\Domain" not found in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Api.php:63
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/composer/ClassLoader.php(444): include()
+#1 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile()
+#2 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(413): Composer\Autoload\ClassLoader->loadClass()
+#3 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(976): Twilio\Rest\Client->getApi()
+#4 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(531): Twilio\Rest\Client->__get()
+#5 /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php(976): Twilio\Rest\Client->getMessages()
+#6 /var/www/vhosts/mypriv.online/httpdocs/webhook/index.php(27): Twilio\Rest\Client->__get()
+#7 {main}
+  thrown in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Api.php on line 63
+2022-03-01 10:12:01.031095 [NOTICE] [1170952] [T0] [14.192.213.139:13492-H3:42C880AB5D6FB809-4#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught Twilio\Exceptions\ConfigurationException: Credentials are required to create a Client in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php:166
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/httpdocs/webhook/webhook.php(13): Twilio\Rest\Client->__construct()
+#1 {main}
+  thrown in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php on line 166
+2022-03-01 10:12:03.521070 [NOTICE] [1170952] [T0] [14.192.213.139:13492-H3:42C880AB5D6FB809-8#APVH_mypriv.online:443] [STDERR] PHP Fatal error:  Uncaught Twilio\Exceptions\ConfigurationException: Credentials are required to create a Client in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php:166
+Stack trace:
+#0 /var/www/vhosts/mypriv.online/httpdocs/webhook/webhook.php(13): Twilio\Rest\Client->__construct()
+#1 {main}
+  thrown in /var/www/vhosts/mypriv.online/httpdocs/webhook/vendor/twilio/sdk/src/Twilio/Rest/Client.php on line 166
+2022-03-04 04:28:54.854961 [NOTICE] [3273856] [T6] [185.174.28.39:32930#APVH_mypriv.online:443:MODSEC] mod_security rule [id "77316757"] at [/etc/httpd/conf/modsecurity.d/rules/custom/006_i360_4_custom.conf:416] triggered! 
+2022-03-04 08:54:37.513097 [INFO] [4146410] [T0] [14.192.208.56:14456-H3:DB19356E85A53BCF-8#APVH_mypriv.online:443] Auto Index is disabled for [/var/www/vhosts/mypriv.online/httpdocs/dashboard/], access denied
+2022-03-04 08:57:17.631681 [INFO] [4146411] [T0] [14.192.208.56:14403-H3:D3B7B3657ACB131A-4#APVH_mypriv.online:443] Auto Index is disabled for [/var/www/vhosts/mypriv.online/httpdocs/dashboard/], access denied
+2022-03-04 09:04:53.105769 [INFO] [4146409] [T0] [14.192.208.56:5479-H3:BC0873FCEF99D7E8-4#APVH_mypriv.online:443] Auto Index is disabled for [/var/www/vhosts/mypriv.online/httpdocs/dashboard/], access denied
+2022-03-04 09:04:55.486540 [INFO] [4146409] [T0] [14.192.208.56:5479-H3:BC0873FCEF99D7E8-8#APVH_mypriv.online:443] Auto Index is disabled for [/var/www/vhosts/mypriv.online/httpdocs/dashboard/], access denied
+2022-03-04 09:05:14.263906 [INFO] [4146409] [T0] [14.192.208.56:5479-H3:BC0873FCEF99D7E8-12#APVH_mypriv.online:443] Auto Index is disabled for [/var/www/vhosts/mypriv.online/httpdocs/dashboard/], access denied
+2022-03-04 09:05:25.408772 [INFO] [4146409] [T0] [14.192.208.56:5479-H3:BC0873FCEF99D7E8-20#APVH_mypriv.online:443] Auto Index is disabled for [/var/www/vhosts/mypriv.online/httpdocs/dashboard/], access denied
+2022-03-04 09:05:26.539344 [INFO] [4146409] [T0] [14.192.208.56:5479-H3:BC0873FCEF99D7E8-24#APVH_mypriv.online:443] Auto Index is disabled for [/var/www/vhosts/mypriv.online/httpdocs/dashboard/], access denied
+2022-03-04 09:11:17.221447 [INFO] [4146411] [T0] [14.192.208.56:5495-H3:83BCE7184029029F-0#APVH_mypriv.online:443] Auto Index is disabled for [/var/www/vhosts/mypriv.online/httpdocs/dashboard/], access denied
+2022-03-04 09:12:39.126018 [INFO] [4146409] [T0] [14.192.208.56:5477-H3:BC605A7A5833F51D-0#APVH_mypriv.online:443] Auto Index is disabled for [/var/www/vhosts/mypriv.online/httpdocs/dashboard/], access denied
+2022-03-04 09:12:58.791428 [INFO] [4146409] [T0] [14.192.208.56:5477-H3:BC605A7A5833F51D-4#APVH_mypriv.online:443] Auto Index is disabled for [/var/www/vhosts/mypriv.online/httpdocs/dashboard/], access denied
+2022-03-04 09:13:00.103245 [INFO] [4146409] [T0] [14.192.208.56:5477-H3:BC605A7A5833F51D-8#APVH_mypriv.online:443] Auto Index is disabled for [/var/www/vhosts/mypriv.online/httpdocs/dashboard/], access denied
+2022-03-04 09:14:23.495383 [INFO] [4146411] [T0] [14.192.208.56:5447-H3:760E1AA41A3A0E99-0#APVH_mypriv.online:443] Auto Index is disabled for [/var/www/vhosts/mypriv.online/httpdocs/dashboard/], access denied
+2022-03-04 09:14:35.380505 [INFO] [4146411] [T0] [14.192.208.56:5447-H3:760E1AA41A3A0E99-12#APVH_mypriv.online:443] Auto Index is disabled for [/var/www/vhosts/mypriv.online/httpdocs/dashboard/], access denied
+2022-03-04 09:16:08.296342 [INFO] [4146410] [T0] [14.192.208.56:5489-H3:9C4AE3B6D9752CAC-32#APVH_mypriv.online:443] Auto Index is disabled for [/var/www/vhosts/mypriv.online/httpdocs/dashboard/], access denied
+2022-03-04 11:34:07.489000 [INFO] [248719] [T0] [14.192.208.56:5452-H3:6D3877BA3EC9F901-32#APVH_mypriv.online:443] Abort request processing by PID:271630, kill: 1, begin time: 0, sent time: 0, req processed: 0
+2022-03-04 11:34:07.492937 [INFO] [248719] [T0] [14.192.208.56:5452-H3:6D3877BA3EC9F901-28#APVH_mypriv.online:443] Abort request processing by PID:271631, kill: 1, begin time: 0, sent time: 0, req processed: 0
+2022-03-04 11:34:07.511914 [INFO] [248719] [T0] [14.192.208.56:5452-H3:6D3877BA3EC9F901-48#APVH_mypriv.online:443] Abort request processing by PID:271634, kill: 1, begin time: 0, sent time: 0, req processed: 0
+2022-03-04 11:34:07.520647 [INFO] [248719] [T0] [14.192.208.56:5452-H3:6D3877BA3EC9F901-20#APVH_mypriv.online:443] Abort request processing by PID:271628, kill: 1, begin time: 0, sent time: 0, req processed: 0
+2022-03-04 11:34:07.520891 [INFO] [248719] [T0] [14.192.208.56:5452-H3:6D3877BA3EC9F901-4#APVH_mypriv.online:443] Abort request processing by PID:271625, kill: 1, begin time: 0, sent time: 0, req processed: 0
+2022-03-04 11:34:07.522880 [INFO] [248719] [T0] [14.192.208.56:5452-H3:6D3877BA3EC9F901-8#APVH_mypriv.online:443] Abort request processing by PID:271626, kill: 1, begin time: 0, sent time: 0, req processed: 0
+2022-03-04 11:34:07.524933 [INFO] [248719] [T0] [14.192.208.56:5452-H3:6D3877BA3EC9F901-24#APVH_mypriv.online:443] Abort request processing by PID:271629, kill: 1, begin time: 0, sent time: 0, req processed: 0
+2022-03-04 11:34:07.525086 [INFO] [248719] [T0] [14.192.208.56:5452-H3:6D3877BA3EC9F901-16#APVH_mypriv.online:443] Abort request processing by PID:271627, kill: 1, begin time: 0, sent time: 0, req processed: 0
+2022-03-04 11:34:07.526895 [INFO] [248719] [T0] [14.192.208.56:5452-H3:6D3877BA3EC9F901-0#APVH_mypriv.online:443] Abort request processing by PID:271623, kill: 1, begin time: 0, sent time: 0, req processed: 0
+2022-03-04 11:34:07.535886 [INFO] [248719] [T0] [14.192.208.56:5452-H3:6D3877BA3EC9F901-12#APVH_mypriv.online:443] Abort request processing by PID:271624, kill: 1, begin time: 0, sent time: 0, req processed: 0
+2022-03-05 05:08:02.833538 [NOTICE] [1700883] [T5] [185.83.144.103:47940#APVH_mypriv.online:443:MODSEC] mod_security rule [id "77142201"] at [/etc/httpd/conf/modsecurity.d/rules/custom/006_i360_4_custom.conf:304] triggered! 
+2022-03-05 09:28:09.731284 [INFO] [2539871] [T0] [14.192.208.215:26598-H3:A7D437CED99D0A18-8#APVH_mypriv.online:443] Abort request processing by PID:2543844, kill: 1, begin time: 1, sent time: 1, req processed: 0
+2022-03-06 07:37:35.668908 [INFO] [106842] [T0] [14.192.208.215:26602-H3:62CFABADD7AED0E6-16#APVH_mypriv.online:443] Abort request processing by PID:511268, kill: 1, begin time: 0, sent time: 0, req processed: 0
+2022-03-06 07:37:35.670843 [INFO] [106842] [T0] [14.192.208.215:26602-H3:62CFABADD7AED0E6-8#APVH_mypriv.online:443] Abort request processing by PID:511269, kill: 1, begin time: 0, sent time: 0, req processed: 0
+2022-03-06 07:37:35.670884 [INFO] [106842] [T0] [14.192.208.215:26602-H3:62CFABADD7AED0E6-20#APVH_mypriv.online:443] Abort request processing by PID:511267, kill: 1, begin time: 0, sent time: 0, req processed: 0
+2022-03-06 07:37:35.670983 [INFO] [106842] [T0] [14.192.208.215:26602-H3:62CFABADD7AED0E6-0#APVH_mypriv.online:443] Abort request processing by PID:511265, kill: 1, begin time: 0, sent time: 0, req processed: 0
+2022-03-06 07:37:35.671015 [INFO] [106842] [T0] [14.192.208.215:26602-H3:62CFABADD7AED0E6-4#APVH_mypriv.online:443] Abort request processing by PID:511266, kill: 1, begin time: 0, sent time: 0, req processed: 0
+2022-03-06 07:37:35.671043 [INFO] [106842] [T0] [14.192.208.215:26602-H3:62CFABADD7AED0E6-12#APVH_mypriv.online:443] Abort request processing by PID:511270, kill: 1, begin time: 0, sent time: 0, req processed: 0

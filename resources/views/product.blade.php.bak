@@ -1,0 +1,98 @@
+@extends('layouts/molla')
+
+@section('title', 'Product')
+
+@section('content')
+
+        <main class="main">
+            <nav aria-label="breadcrumb" class="breadcrumb-nav border-0 mb-0">
+                <div class="container d-flex align-items-center">
+
+                </div><!-- End .container -->
+            </nav><!-- End .breadcrumb-nav -->
+
+            <div class="page-content">
+                <div class="container">
+                    <div class="product-details-top mb-1">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="product-gallery product-gallery-vertical">
+                                    <div class="row">
+                                        <figure class="product-main-image">
+                                            <img id="product-zoom" src="{{ asset($product->img1) }}" data-zoom-image="{{ asset($product->img1) }}" alt="product image">
+
+                                            <a href="#" id="btn-product-gallery" class="btn-product-gallery">
+                                                <i class="icon-arrows"></i>
+                                            </a>
+                                        </figure><!-- End .product-main-image -->
+
+                                        <div id="product-zoom-gallery" class="product-image-gallery">
+                                            <a class="product-gallery-item active" href="#" data-image="{{ asset($product->img1) }}" data-zoom-image="{{ asset($product->img1) }}">
+                                                <img src="{{ asset($product->img1) }}" alt="product cross">
+                                            </a>
+
+                                            <a class="product-gallery-item" href="#" data-image="{{ asset($product->img2) }}" data-zoom-image="{{ asset($product->img2) }}">
+                                                <img src="{{ asset($product->img2) }}" alt="product cross">
+                                            </a>
+
+                                            <a class="product-gallery-item" href="#" data-image="{{ asset($product->img3) }}" data-zoom-image="{{ asset($product->img3) }}">
+                                                <img src="{{ asset($product->img3) }}" alt="product with model">
+                                            </a>
+
+                                            <a class="product-gallery-item" href="#" data-image="{{ asset($product->img4) }}" data-zoom-image="{{ asset($product->img4) }}">
+                                                <img src="{{ asset($product->img4) }}" alt="product back">
+                                            </a>
+                                        </div><!-- End .product-image-gallery -->
+                                    </div><!-- End .row -->
+                                </div><!-- End .product-gallery -->
+                            </div><!-- End .col-md-6 -->
+
+                            <div class="col-md-6">
+                                <div class="product-details product-details-centered">
+                                    <h1 class="product-title">{{ $product->name }}</h1><!-- End .product-title -->
+
+                                    <div class="product-price">
+                                        RM&nbsp;{{ $product->price }}
+                                    </div><!-- End .product-price -->
+
+                                    <div class="product-content">
+                                        <p>{{ $product->description }}</p>
+                                    </div><!-- End .product-content -->
+                                
+                                    <div class="product-details-action">
+
+                                    <form action="/product_order" method="post"> 
+                                        @csrf   
+                                      <input type="hidden" name="id" value="{{ $product->id }}">
+                                      <input type="hidden" name="name" value="{{ $product->name }}">
+                                      <input type="hidden" name="price" value="{{ $product->price }}">
+                                      <input type="hidden" name="description" value="{{ $product->description }}">
+                                      <input type="hidden" name="img1" value="{{ $product->img1 }}">
+                                        <div class="details-action-col">
+                                            <div class="product-details-quantity">
+                                                <input type="number" id="qty" name="quantity" class="form-control" value="1" min="1" max="10" step="1" data-decimals="0" required>
+                                            </div><!-- End .product-details-quantity -->
+                                        
+                                            
+
+                                            <button type="submit" class="btn-product btn-cart"><span>Pesan</span></button>
+                                         
+                                        </div><!-- End .details-action-col -->
+                                    </form>
+
+                                    </div><!-- End .product-details-action -->
+
+
+                                </div><!-- End .product-details -->
+                            </div><!-- End .col-md-6 -->
+                        </div><!-- End .row -->
+                    </div><!-- End .product-details-top -->
+										
+                </div><!-- End .container -->
+            </div><!-- End .page-content -->
+        </main><!-- End .main -->
+
+
+    <button id="scroll-top" title="Back to Top"><i class="icon-arrow-up"></i></button>
+
+@endsection

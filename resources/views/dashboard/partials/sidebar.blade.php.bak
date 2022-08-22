@@ -1,0 +1,32 @@
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="bi bi-whatsapp menu-icon"></i>
+              <span class="menu-title">WhatsApp</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="bi bi-telegram menu-icon"></i>
+              <span class="menu-title">Telegram</span>
+            </a>
+          </li>			  
+		  
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="bi bi-gear menu-icon"></i>
+              <span class="menu-title">Settings</span>
+            </a>
+          </li>			  		  
+		  
+        </ul>
+      </nav>
